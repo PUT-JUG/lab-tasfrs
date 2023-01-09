@@ -1,6 +1,6 @@
 # ROS 2 - publishing data
 
-![](_resources/lab6/ros-humble-hawksbill-featured.jpg)
+![](_resources/lab07/ros-humble-hawksbill-featured.jpg)
 
 ## Setting up the environment
 
@@ -123,4 +123,4 @@ The browser-launched robot panel (PolyScope) is a graphical user interface (GUI)
 4. Set the arm to the `Home` position using the `UR3` panel.
 5. Try to run the sample trajectory using the command: `ros2 launch ur_robot_driver test_scaled_joint_trajectory_controller.launch.py`. Does the robot move?
 6. Use the `UR3` panel to create a new, empty program. Add the `External Control` command to it (from `Structure` -> `URCaps`). Run the program and the example trajectory from the previous task. Does the robot move in the panel and `rviz`?
-7. Test the above on another `UR` robot, for example `ur5e`.
+7. Test the above on another `UR` robot, for example `ur3e`.

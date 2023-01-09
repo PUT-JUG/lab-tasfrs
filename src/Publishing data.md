@@ -66,7 +66,7 @@ The command returns the type `geometry_msgs/msg/Twist`. We can check the type wi
 ros2 interface show geometry_msgs/msg/Twist
 ```
 
-The `Twist` structure contains two 3D vectors. The first vector defines the linear velocity and the second defines the angular velocity. Our robotic turtle, unlike multi-rotor drones, is a non-holonomic system. This means that the robot can move forward/backward (`x` axis) and rotate around the `z` axis. To move the robot, you need to publish data to the `/turtle1/cmd_vel` theme by setting the appropriate values for linear and angular velocity:
+The `Twist` structure contains two 3D vectors. The first vector defines the linear velocity and the second defines the angular velocity. Our robotic turtle, unlike multi-rotor drones, is a non-holonomic system. This means that the robot can move forward/backward (`x` axis) and rotate around the `z` axis. To move the robot, you need to publish data to the `/turtle1/cmd_vel` topic by setting the appropriate values for linear and angular velocity:
 
 ```bash
 ros2 topic pub /turtle1/cmd_vel geometry_msgs/msg/Twist "linear:

@@ -27,9 +27,9 @@ Example environment structure:
 ```text
 ros2_ws
 ├── build - contains files for the build process, so that only new changes can be included in the re-build
-├─ install - place where packages are installed
+├── install - place where packages are installed
 ├── log - contains the log of the build process
-└─── src - developer's ROS workspace containing packages
+└── src - developer's ROS workspace containing packages
 ```
 
 Building the ROS 2 environment is done using [`colcon`](https://colcon.readthedocs.io/en/released/), with the following command:

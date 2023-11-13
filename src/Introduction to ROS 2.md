@@ -155,7 +155,7 @@ ros2 launch package_name launch_name
 
 In ROS 2, `launch` files can take one of three extensions, `.xml`, `.py` or `.yaml`. The `.py` extension is recommended due to the flexibility of this language. For more information, see the file reference [`launch`](https://docs.ros.org/en/humble/How-To-Guides/Launch-file-different-formats.html).
 
-### Theme
+### Topic
 
 A topic is a unique name by which nodes can establish connections and communicate. A topic is created when a node starts publishing a specific type of message.
 
@@ -320,8 +320,8 @@ Use the `git clone --branch ros2 https://github.com/ros-drivers/usb_cam.git` com
 2. the `usb_cam` package defines a dependency on other packages. Perform an automatic installation of the dependencies using `rosdep`.
 3. build the ROS 2 environment with the `colcon build` command and make source: `source install/setup.bash`.
 
-    Note: if you have problems with the above installation from source, there is a second option to install the package. You can do a system installation with the `sudo apt-get install ros-humble-usb-cam` command. 
-    In this case, the package will not appear in the `src` directory of your local environment and you will not need to build this package. 
+    Note: if you have problems with the above installation from source, there is a second option to install the package. You can do a system installation with the `sudo apt-get install ros-humble-usb-cam` command.
+    In this case, the package will not appear in the `src` directory of your local environment and you will not need to build this package.
     To load libraries installed on the system use the command: `source /opt/ros/humble/setup.bash` instead of the local equivalent.
 
 4. run the installed package node with the command: `ros2 run usb_cam usb_cam_node_exe`.
@@ -330,7 +330,7 @@ Use the `git clone --branch ros2 https://github.com/ros-drivers/usb_cam.git` com
 
     5.1 Display the list of topics.
 
-    5.2 Display the subject information `/image_raw`.  
+    5.2 Display the topic information of `/image_raw`.  
 
     5.3. Display the messages from the `/image_raw` topic.
 
@@ -343,7 +343,7 @@ Use the `git clone --branch ros2 https://github.com/ros-drivers/usb_cam.git` com
     ros2 run image_view image_view --ros-args --remap /image:=/image_raw
     ```
 
-8. Run `rqt_graph`. Then re-subscribe to the `/image_raw` theme and observe the changes in the graph.
+8. Run `rqt_graph`. Then re-subscribe to the `/image_raw` topic and observe the changes in the graph.
 
 9. install and run the [sensors_demos_gazebo](https://github.com/Jakubach/sensors_demos_gazebo) package for sensor simulation (instructions are in the `README` file of the package). Place it in the `src` directory of the ROS 2 environment. Use the `launch` files to run it.
 
@@ -361,7 +361,7 @@ Use the `git clone --branch ros2 https://github.com/ros-drivers/usb_cam.git` com
 
       ![](_resources/lab06/kinect.png)
 
-      Simulate the sensor in `Gazebo` and consult the list of themes. View their contents in the terminal and in `RViz`.
+      Simulate the sensor in `Gazebo` and consult the list of topics. View their contents in the terminal and in `RViz`.
 
       Consider why the point cloud is rotated and the images do not overlap (in the `z` axis).
 

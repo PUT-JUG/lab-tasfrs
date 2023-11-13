@@ -56,9 +56,9 @@ source install/setup.bash
 
 It should be called in the root directory of the ROS 2 environment (e.g. `~/ros2_ws`).
 
-### Packet
+### Package
 
-A parcel is the place where nodes are stored. It is used to organise code so that the software is modular.
+A package is the place where nodes are stored. It is used to organise code so that the software is modular.
 
 Example of a package structure (Python):
 

@@ -113,7 +113,7 @@ ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur3 robot_ip:=192.168.
 
 🐢🐢🐢
 
-The browser-launched robot panel (PolyScope) is a graphical user interface (GUI) for controlling the robot arm, executing robot programs and easily creating new ones. A properly run simulation should allow you to control the robot in PolyScope and observe its movements in RViz.
+[The browser-launched robot panel (PolyScope)](http://192.168.56.101:6080/vnc.html) is a graphical user interface (GUI) for controlling the robot arm, executing robot programs and easily creating new ones. A properly run simulation should allow you to control the robot in PolyScope and observe its movements in RViz.
 
 ## Tasks
 

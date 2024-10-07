@@ -116,7 +116,7 @@ Key shortcuts:
 
 ### Vim/Neovim
 
-More efficient (albeit requiring some preliminary knowledge) file editing is possible in the *Vim* editor. There is also an alternative version of it: *Neovim*.
+More efficient (but requiring some preliminary knowledge) file editing is possible in the *Vim* editor. There is also an alternative version of it: *Neovim*.
 
 Example usage (if the file does not exist, it will be created):
 

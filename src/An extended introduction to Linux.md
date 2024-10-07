@@ -207,7 +207,7 @@ Linux is equipped with tools to remotely access another device's console and tra
 The `ssh` command is used to remotely access another device. The syntax of the command is as follows:
 
 ```bash
-ssh <user>@<address>.
+ssh <user>@<address>
 ```
 
 For example:
@@ -241,11 +241,11 @@ Ask your neighboring colleagues for their IP address. Connect to their computer 
 The basic command for transferring files between devices is `scp`. The syntax is a combination of cp and ssh:
 
 ```bash
-scp <local_file> <user>@<address>:<target_directory>.
+scp <local_file> <user>@<address>:<target_directory>
 scp -r <local_directory> <user>@<address>:<target_directory>
 
 scp <user>@<address>:<remote_file> <local_directory>
-scp -r <user>@<address>:<remote_directory> <local_directory>.
+scp -r <user>@<address>:<remote_directory> <local_directory>
 ```
 
 ***
@@ -261,8 +261,8 @@ Download any file and directory from another computer. Change its contents and u
 The `rsync` tool is used for incremental (allows resuming) transfer of files and/or directories. It is very well suited for transferring large amounts of data. There are very many options for its configuration, but in most cases the following syntax will work well for transfer:
 
 ```bash
-rsync -PHAXphax <local_directory> <user>@<address>:<target_directory>.
-rsync -PHAXphax <user>@<address>:<remote_file> <local_directory>.
+rsync -PHAXphax <local_directory> <user>@<address>:<target_directory>
+rsync -PHAXphax <user>@<address>:<remote_file> <local_directory>
 ```
 
 ***

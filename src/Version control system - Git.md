@@ -5,12 +5,13 @@
 A version control system is used to track changes made to a file (or files) and allows you to revert to any previous state. It is a commonly used tool in software projects although embracing version control is possible for any type of file on a computer.
 
 If you are interested in graphics or web design and want to maintain every version of a graphic file or web site layout (which seems like a reasonable idea), then using a version control system is the right tool for the job. It allows you to:
-* restore a file (or files) to an earlier version, 
-* restoring the state of the entire project, 
-* comparing the changes made (even when one file was edited by many people), 
-* obtaining information about who made a given modification and when.
+- restore a file (or files) to an earlier version, 
+- restoring the state of the entire project, 
+- comparing the changes made (even when one file was edited by many people), 
+- obtaining information about who made a given modification and when.
 
 The most widely distributed version control system is ```Git``` and the projects created within it are __repositories__. The popular site [```GitHub```](https://github.com/) provides network hosting for ```Git``` repositories.
+
 ***
 
 

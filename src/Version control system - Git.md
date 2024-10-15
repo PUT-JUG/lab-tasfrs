@@ -5,6 +5,7 @@
 A version control system is used to track changes made to a file (or files) and allows you to revert to any previous state. It is a commonly used tool in software projects although embracing version control is possible for any type of file on a computer.
 
 If you are interested in graphics or web design and want to maintain every version of a graphic file or web site layout (which seems like a reasonable idea), then using a version control system is the right tool for the job. It allows you to:
+
 - restore a file (or files) to an earlier version, 
 - restoring the state of the entire project, 
 - comparing the changes made (even when one file was edited by many people), 
@@ -24,12 +25,14 @@ To get started with ```Git``` take a look at the interactive tutorial available 
 #### 🛠🔥 Task 1 🛠🔥.
 
 Solve the first four tasks from the _Main: Introduction Sequence_ from [learngitbranching](https://learngitbranching.js.org/):
+
  1. Introduction to Git Commits
  2. Branching in Git
  3. Merging in Git
  4. Rebase Introduction
  
  and the following seven from _Push & Pull -- Git Remotes_:
+ 
  1. Clone Intro 
  2. Remote Branches
  3. Git Fetchin'
@@ -72,6 +75,7 @@ git config -l
 #### 🛠🔥 Task 5 🛠🔥.
 
 Clone the created repository from ```github``` to your computer with the command ```git clone address```.
+
 ***
 
 #### 🛠🔥 Task 6 🛠🔥.
@@ -94,22 +98,27 @@ The ```git add`` command allows you to split the changes you have made into diff
 | ```git push``` | Causes the remote repository to be updated with local changes. |
 
 Watch the effect on ```Github```, take a look at the repository user interface.
+
 ***
+
 #### 🛠🔥 Task 7 🛠🔥.
 
 Code containing information about the author, dependencies in the project, installation and running instructions is simpler to use. Such information is usually placed in the ```README.md``` file. The language we use to create such files is ```Markdown```. 
 Using [syntax information](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) try to edit the ```README.md``` file to achieve the result listed below. Use the browser-based editor at ```Github``` to do this.
 ![](_resources/lab02/md.png)
+
 ***
 
-#### 🛠🔥 Task 8 🛠🔥.
+#### 🛠🔥 Task 8 🛠🔥
 
 Call the ```cat``` command on the local ```README.md``` file to display its contents. Why doesn't the file contain the changes you made? Update the local version of the repository using the ```git pull``` command.
+
 ***
 
 #### 🛠🔥 Task 9 🛠🔥
 
 The projects you will be involved in in the future will most likely be team-based. Many repositories are also open-source, meaning you can influence the code in them. In this task, we will propose a change to the teachers's repository:
+
 1. Open the indicated repository in a browser.
 2. Go to the ```Issues``` tab and add them in the following format:
 ```
@@ -128,7 +137,7 @@ The teacher will add you as a co-developer of the project.
 
 ***
 
-#### 🛠🔥 Homework 🛠🔥.
+#### 🛠🔥 Homework 🛠🔥
 
 Find an answer to the question - what is the purpose of the ```.gitignore``` file?
 

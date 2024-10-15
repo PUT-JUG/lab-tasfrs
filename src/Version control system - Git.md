@@ -131,7 +131,7 @@ The teacher will add you as a co-developer of the project.
 3. Clone the repository to your computer. (```git clone address_www```).
 4. Create your own branch in the repository by naming it with your username. (```git branch name_of_the_branch```). Note: You can execute command 4 and 5 with one command by adding an argument (```git checkout -b name_of_the_branch```).
 5. Change the current branch to the newly created one (```git checkout name_of_the_branch```).
-6. Create a new directory (name it with your username), and in this directory create a text file (name it with your initials ```.txt```) and paste the sample text into it (```United we stand, divided we fall!```).
+6. Create a new directory (name it with your username), and in this directory create a text file (name it with your initials ```.txt```) and paste the sample text into it (```United we stand, divided we fall!```). Create a commit including the changes.
 6. Push the branch to the server. (```git push -u origin name_of_the_branch```). The ```-u``` argument causes changes to the newly created local branch to be tracked against changes to the remote repository.
 7. Using the ```Github``` user interface, create a _pull request_ of the created branch to the master branch.
 

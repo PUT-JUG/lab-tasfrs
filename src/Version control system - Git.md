@@ -97,7 +97,9 @@ The ```git add`` command allows you to split the changes you have made into diff
 | ```git commit -m "Brief description of changes made"``` | Adds the changes made to the repository history. |
 | ```git push``` | Causes the remote repository to be updated with local changes. |
 
-Watch the effect on ```Github```, take a look at the repository user interface.
+Pushing to the remote repository will request for a password. Here you need to use **personal access token** instead of github password. There is an [instruction](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic) how to create a personal access token.
+
+After pushing the changes, watch the effect on ```Github```, take a look at the repository user interface.
 
 ***
 

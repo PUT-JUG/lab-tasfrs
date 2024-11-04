@@ -58,7 +58,7 @@ It should be called in the root directory of the ROS 2 environment (e.g. `~/ros2
 
 ### Package
 
-A package is the place where nodes are stored. It is used to organise code so that the software is modular.
+A package is the place where nodes are stored. It is used to organize code so that the software is modular.
 
 Example of a package structure (Python):
 
@@ -72,7 +72,7 @@ my_package/
       test - contains scripts for automatic testing
 ```
 
-The organisation of packages is done by using [`ament`](http://design.ros2.org/articles/ament.html), an evolution of [`catkin`](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwi3t9bii7b7AhWSw4sKHXGFCvoQFnoECBQQAQ&url=http%3A%2F%2Fwiki.ros.org%2Fcatkin&usg=AOvVaw0vs2wEMzUY0BPSzVhnvG6P) known from ROS 1. With this tool, packages are structured.
+The organization of packages is done by using [`ament`](http://design.ros2.org/articles/ament.html), an evolution of [`catkin`](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwi3t9bii7b7AhWSw4sKHXGFCvoQFnoECBQQAQ&url=http%3A%2F%2Fwiki.ros.org%2Fcatkin&usg=AOvVaw0vs2wEMzUY0BPSzVhnvG6P) known from ROS 1. With this tool, packages are structured.
 
 Creating a package (C++):
 
@@ -136,7 +136,7 @@ A ROS graph (_ROS graph_) is a network of nodes that process data. It includes a
 
 🐢 topics - communication channel between nodes
 
-🐢 discovery - automatic process of establishing a connection between nodes
+🐢 discovery - the automatic process of establishing a connection between nodes
 
  The tool that allows you to view and visualize the current state of the graph is:
 
@@ -144,7 +144,7 @@ A ROS graph (_ROS graph_) is a network of nodes that process data. It includes a
 rqt_graph
 ```
 
-Example graph visualisation:
+Example graph visualization:
 ![](_resources/lab06/rqt_graph.png)
 
 It is possible to group nodes allowing them to be run collectively. The `launch` files are used for this. Invoking an existing `launch` file is done by the command:
@@ -225,7 +225,7 @@ For message information:
 ros2 interface show message_type
 ```
 
-## Message visualisation
+## Message visualization
 
 `RViz` is a graphical interface that allows you to display information from topics using built-in plugins. It allows you to look at the world through the _eyes_ of the robot or sensor. For ROS 2, `RViz` is launched with the command:
 
@@ -247,6 +247,17 @@ gazebo
 ![](_resources/lab06/gazebo.png)
 
 ## ROS in Docker
+
+In lab. 321 ROS 2 Humble is **installed natively** and should be ready to use. 
+
+You can install Ubuntu 22.04 and ROS Humble natively on your computer, but it requires a lot of attention to not mess up things on your device. The recommended solution for beginners is to use a Docker container for ROS development.
+
+> **Here** you can find the repository with a ready-to-use `ros2_ws` template that utilizes the VSCode DevContainer. Instruction is given in the README.md file in the repository.
+> 
+> Click on the link depending on your host OS version: [Ubuntu](https://github.com/BartlomiejKulecki/ros2_ws_template/tree/Ubuntu) or [Windows](https://github.com/BartlomiejKulecki/ros2_ws_template/tree/Windows).
+> If you use this template, you can skip the steps below.
+
+Below you can find some basic manual steps to create your own container with ROS.
 
 To start with, it is a good idea to build your own extended image based on the official one using the following Dockerfile:
 

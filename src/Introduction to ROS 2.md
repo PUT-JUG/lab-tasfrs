@@ -248,14 +248,16 @@ gazebo
 
 ## ROS in Docker
 
-In lab. 321 ROS 2 Humble is **installed natively** and should be ready to use. 
+On the computers in laboratory room 321, ROS 2 Humble is **installed natively**. Use it during the classes - **skip** the "ROS in Docker" section (you can do it on your PC). 
 
-You can install Ubuntu 22.04 and ROS Humble natively on your computer, but it requires a lot of attention to not mess up things on your device. The recommended solution for beginners is to use a Docker container for ROS development.
+You can install Ubuntu 22.04 and ROS Humble natively on your computer. It provides the best performance but also requires a lot of attention during installation to not mess up things on your device. The other solution is to use a Docker container for ROS development.
 
 > **Here** you can find the repository with a ready-to-use `ros2_ws` template that utilizes the VSCode DevContainer. Instruction is given in the README.md file in the repository.
 > 
 > Click on the link depending on your host OS version: [Ubuntu](https://github.com/BartlomiejKulecki/ros2_ws_template/tree/Ubuntu) or [Windows](https://github.com/BartlomiejKulecki/ros2_ws_template/tree/Windows).
-> If you use this template, you can skip the steps below.
+> If you use this template, you can **skip** the steps below.
+> 
+> **Note**: USB cameras are not supported by Docker on **Windows**.
 
 Below you can find some basic manual steps to create your own container with ROS.
 

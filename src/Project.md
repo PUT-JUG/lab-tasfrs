@@ -12,7 +12,7 @@ The project should be done using ROS2 and include self-created nodes (or at leas
 The node created should allow:
 
 * in the simpler version or for those without access to a camera: click on a point in the window, depending on whether the point pressed is above the center of the screen or below, the robot moves forward or backward.
-* in the default version: the ArUco marker is detected on the screen, depending on whether the center of the marker is above the center of the erakno or below, the robot moves forward or backward
+* in the default version: the ArUco marker is detected on the camera image, depending on whether the center of the marker is above the center of the image or below, the robot moves forward or backward
 
 ## Example resources
 

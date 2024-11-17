@@ -128,7 +128,7 @@ rosdep install --from-paths src -y --ignore-src --rosdistro humble
 
 These dependencies were defined when the package was created.
 
-The code shown creates a subscriber to the `/image_raw` theme, which can be obtained, for example, using the [`usb_cam`](https://github.com/ros-drivers/usb_cam/tree/ros2) package. **If you clone it, remember to switch the cloned repo to a release tag.** In the subscriber's callback, the `listener_callback` function, the conversion of the image from the ROS `Image` type to the type supported by the `OpenCV` library is performed and the camera frames are displayed. Documentation of the method to create subscribers (`create_subscription`) can be found [here](https://docs.ros2.org/foxy/api/rclpy/api/node.html#rclpy.node.Node.create_subscription).
+The code shown creates a subscriber to the `/image_raw` topic, which can be obtained, for example, using the [`usb_cam`](https://github.com/ros-drivers/usb_cam/tree/ros2) package. **If you clone it, remember to switch the cloned repo to a release tag.** In the subscriber's callback, the `listener_callback` function, the conversion of the image from the ROS `Image` type to the type supported by the `OpenCV` library is performed and the camera frames are displayed. Documentation of the method to create subscribers (`create_subscription`) can be found [here](https://docs.ros2.org/foxy/api/rclpy/api/node.html#rclpy.node.Node.create_subscription).
 
 ## Object-oriented nodes and node publishing
 
@@ -201,7 +201,7 @@ An example of a subscribing node can be found in [documentation](https://docs.ro
 
 ## Nodes in different programming languages
 
-[ROS2 Client Libraries](https://docs.ros.org/en/humble/Concepts/About-ROS-2-Client-Libraries.html) is an API that, allows users to implement ROS code. Using `Client Libraries`, code developers gain access to concepts such as nodes, themes, services, etc. The `Client Libraries` are available in a variety of programming languages, allowing users to write ROS code in the language that best suits their application. For example, you may want to write visualization tools in Python because it speeds up prototyping, while efficient nodes can be implemented in C++.
+[ROS2 Client Libraries](https://docs.ros.org/en/humble/Concepts/About-ROS-2-Client-Libraries.html) is an API that, allows users to implement ROS code. Using `Client Libraries`, code developers gain access to concepts such as nodes, topics, services, etc. The `Client Libraries` are available in a variety of programming languages, allowing users to write ROS code in the language that best suits their application. For example, you may want to write visualization tools in Python because it speeds up prototyping, while efficient nodes can be implemented in C++.
 
 Sample template for creating an object node for C++ language:
 
@@ -410,7 +410,7 @@ ros2 run turtlebot3_teleop teleop_keyboard
 
 ## Tasks
 
-1. Perform the following test. Edit the sample code from the "Node Creation" subsection by commenting out the line containing `rclpy.spin(node)`. Observe the effect and consider what the purpose of this line of code is.
+1. Perform the following test. Edit the sample code from the "Creating a node" subsection by commenting out the line containing `rclpy.spin(node)`. Observe the effect and consider what the purpose of this line of code is.
 
 2. Based on the example from the "Adding a subscriber" subsection, write a subscriber to the camera image in the object version.
 
@@ -461,5 +461,5 @@ ros2 run turtlebot3_teleop teleop_keyboard
     ```
 
 4. To the code from the previous task, add a parameter specifying the length of the square (currently it is 200). Call the node with the changed value of this parameter.
-5. Write a node that will periodically publish messages on the `/cmd_vel` subject for the `TurtleBot` robot. You can adopt the goal to make the robot go around in circles.
-6. Make an extension of the program from the previous task. Use the published `/point` theme to make the robot drive forward (add linear velocity in the x-axis) when the clicked point is above the center of the screen, and stop in place when it is below. Take the one from task 3 (`512`) as the default window length.
+5. Write a node that will periodically publish messages on the `/cmd_vel` topic for the `TurtleBot` robot. You can adopt the goal to make the robot go around in circles.
+6. Make an extension of the program from the previous task. Use the published `/point` topic to make the robot drive forward (add linear velocity in the x-axis) when the clicked point is above the center of the screen, and stop in place when it is below. Take the one from task 3 (`512`) as the default window length.

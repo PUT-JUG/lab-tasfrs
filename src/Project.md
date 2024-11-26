@@ -25,7 +25,6 @@ The node created should allow:
 
  The simplest version involves creating a project using a robotic turtle [turtlesim](https://docs.ros.org/en/humble/Tutorials/Beginner-CLI-Tools/Introducing-Turtlesim/Introducing-Turtlesim.html#).
 
-## Form of rendering projects
 
 ## Example demonstration (simplified version for UR 5 robot)
 

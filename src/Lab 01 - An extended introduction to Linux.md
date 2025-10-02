@@ -213,7 +213,7 @@ ssh <user>@<address>
 For example:
 
 ```bash
-ssh put@127.0.0.1
+ssh student@127.0.0.1
 ```
 
 will connect us to our own computer.
@@ -230,7 +230,7 @@ ssh 127.0.0.1
 
 Ask your neighboring colleagues for their IP address. Connect to their computer and turn it off.
 
-**NOTE 1**: account password is *put*.
+**NOTE 1**: account password is *lrm*.
 
 **NOTE 2**: with remote access, you may need to run the command to shut down the computer as an administrator - you can precede it with the *sudo* command.
 

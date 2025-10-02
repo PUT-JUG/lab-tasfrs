@@ -256,7 +256,7 @@ Download any file and directory from another computer. Change its contents and u
 
 ***
 
-### `rsync` tool.
+### `rsync` tool
 
 The `rsync` tool is used for incremental (allows resuming) transfer of files and/or directories. It is very well suited for transferring large amounts of data. There are very many options for its configuration, but in most cases the following syntax will work well for transfer:
 

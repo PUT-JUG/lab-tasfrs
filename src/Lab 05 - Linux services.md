@@ -190,7 +190,7 @@ Create a service file that runs your application. Add a few `print` statements t
 
 You may want to create a [virtual environment](https://docs.python.org/3.10/library/venv.html) (`venv`) and install the `click` library inside it.
 
-**Finish the task by stopping and disabling the service. Remove the service file from `/etc/systemd/system`. Save your code—you will need it in future labs.**
+**Finish the task by stopping and disabling the service. Remove the service file from `/etc/systemd/system`. Save your code - you will need it in future labs.**
 
 ***
 

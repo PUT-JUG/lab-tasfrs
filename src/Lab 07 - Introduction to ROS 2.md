@@ -329,7 +329,7 @@ grep -q ^'export ROS_DOMAIN_ID=' ~/.bashrc || echo 'export ROS_DOMAIN_ID=NR_COMP
 💡To observe the changes close the current terminal window and start a new one, or if you do not want to close the terminal window, type `source ~/.bashrc`.
 
 1. install and run the example node. Download the [`usb_cam`](https://github.com/ros-drivers/usb_cam/tree/ros2) package and place it in the `src` directory of the ROS environment 2. 
-Use the `git clone --branch ros2 https://github.com/ros-drivers/usb_cam.git` command.
+Use the `git clone https://github.com/ros-drivers/usb_cam.git` command.
 2. the `usb_cam` package defines a dependency on other packages. Perform an automatic installation of the dependencies using `rosdep`.
 3. build the ROS 2 environment with the `colcon build` command and make source: `source install/setup.bash`.
 

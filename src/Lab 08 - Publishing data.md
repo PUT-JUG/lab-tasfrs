@@ -130,10 +130,11 @@ ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur3 robot_ip:=192.168.
 
 ## Tasks
 
+0. Go through the introduction and test the turtlesim-related commands on your own.
 1. Read the frequency of the `UR3` robot control loop. To do this, display the frequency for the topic `/joint_states`.
 2. Move the arm in the `UR3` panel. Verify that `rviz` correctly renders the robot's pose.
 3. In the terminal, check what topics and what types the `UR3` controller has created.
 4. Set the arm to the `Home` position using the `UR3` panel.
 5. Try to run the sample trajectory using the command: `ros2 launch ur_robot_driver test_scaled_joint_trajectory_controller.launch.py`. Does the robot move? If not, go to the next task.
 6. Use the `UR3` panel to create a new, empty program. Add the `External Control` command to it (from `Structure` -> `URCaps`). Run the program and the example trajectory from the previous task. Does the robot move in the panel and `rviz`?
-7. Test the above on another `UR` robot, for example `ur3e`.
+7. Test the above on another `UR` robot, for example `ur5e`.

@@ -4,7 +4,7 @@
 
 The project should be done using ROS2 and include self-created nodes (or at least a single node). The use of external packages is also possible (e.g. `usb_cam`) and recommended. 
 
-The goal of the project is to **create an interface for controlling the robot**. The process should look as follows:
+The goal of the project is to **create an interface for controlling the robot**. The example process should look as follows:
 
 1. Launch a camera driver.
 2. Start your node(s) to control the robot.

@@ -124,7 +124,8 @@ ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur3 robot_ip:=192.168.
 
 | PolyScope | RViz |
 | -------- | -------- |
-| ![](_resources/lab07/polyscope.jpg) | ![](_resources/lab07/ur_rviz.jpg) |
+| <img src="_resources/lab07/polyscope.png" alt="Polyscope" height="400" /> | <img src="_resources/lab07/ur_rviz.png" alt="Rviz" height="400" /> |
+
 
 
 ## Tasks

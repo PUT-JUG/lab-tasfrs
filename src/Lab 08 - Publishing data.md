@@ -101,6 +101,13 @@ After installation, we can start the `UR3` robot simulator. This step internally
 ros2 run ur_robot_driver start_ursim.sh -m ur3
 ```
 
+> If you use **ROS in Docker**, the above command **would not work**, because it internally starts a docker container (docker in docker problem occurs).
+> The solution is to start this container next to your ROS container. For this case, download the [start_ursim.sh](https://github.com/UniversalRobots/Universal_Robots_Client_Library/blob/master/scripts/start_ursim.sh) script to your host system. Then set a script as executable and run:
+> ```bash
+> chmod +x start_ursim.sh
+> ./start_ursim.sh -m ur3
+> ```
+
 After starting the simulator, we can run the robot driver in a new terminal window:
 
 ```bash
@@ -115,9 +122,14 @@ ros2 launch ur_robot_driver ur_control.launch.py ur_type:=ur3 robot_ip:=192.168.
 
 [The browser-launched robot panel (PolyScope)](http://192.168.56.101:6080/vnc.html) is a graphical user interface (GUI) for controlling the robot arm, executing robot programs and easily creating new ones. A properly run simulation should allow you to control the robot in PolyScope and observe its movements in RViz.
 
+| PolyScope | RViz |
+| -------- | -------- |
+| ![](_resources/lab07/polyscope.jpg) | ![](_resources/lab07/ur_rviz.jpg) |
+
+
 ## Tasks
 
-1. Read the frequency of the `UR3` robot control loop. To do this, display the frequency for the subject `/joint_states`.
+1. Read the frequency of the `UR3` robot control loop. To do this, display the frequency for the topic `/joint_states`.
 2. Move the arm in the `UR3` panel. Verify that `rviz` correctly renders the robot's pose.
 3. In the terminal, check what topics and what types the `UR3` controller has created.
 4. Set the arm to the `Home` position using the `UR3` panel.

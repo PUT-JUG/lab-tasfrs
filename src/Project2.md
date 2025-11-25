@@ -14,9 +14,11 @@ The goal of the project is to **create an interface for controlling the robot**.
 The ROS package created for the project should be **published on GitHub**, with commits (more than one) from all project authors. The repository has to include a README.md file with short package documentation (how to install, run, use, etc.).
 
 The **basic version** of the node (grade = 3.0):
+
 - click on a point in the window, depending on whether the point pressed is above the center of the screen or below, the mobile robot ([TurtleBot](https://emanual.robotis.com/docs/en/platform/turtlebot3/simulation/)) moves forward or backward.
 
 Possible ways to increase the grade:
+
 - +0.5: using a **launch** file that runs all nodes at once automatically,
 - +0.5: using [**UR 5**](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver) robot instead of Turtlebot,
 - +0.5: **dockerization** of the application (preparing a plug-and-play Docker setup for ROS with your package),

@@ -19,7 +19,7 @@ The **basic version** of the node (**grade = 3.0**):
 
 Possible ways to increase the grade:
 
-- **+0.5**: using a **launch** file that runs all nodes at once automatically,
+- **+0.5**: using a [**ROS launch**](https://docs.ros.org/en/humble/Tutorials/Intermediate/Launch/Launch-Main.html) file that runs all nodes at once automatically,
 - **+0.5**: using [**UR 5**](https://github.com/UniversalRobots/Universal_Robots_ROS2_Driver) robot instead of Turtlebot,
 - **+0.5**: **dockerization** of the application (preparing a plug-and-play Docker setup for ROS with your package),
 - **+0.5**: using **ArUco** to control the robot
